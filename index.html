@@ -2,8 +2,10 @@
 <html>
     <head>
         <title>Priytosh Tripathi | Software Developer | Author | Creator </title>
+        <link rel="stylesheet" href="css/styles.css">
+        
     </head>
-    <body>
+    <body >
         <table cellspacing="20">
             <tr>
                 <td><img src="images/me.gif" alt="Image not Found"></td>
@@ -30,7 +32,7 @@
             <li> Lesgo! - Easiest way to hangout, plan and meet your friends</li>
         </ul>
         <hr>
-        <h3>Contact me</h3>
+        <h3 class="contact">Contact me</h3>
         <form class="" action="mailto:priytosh.tripathi@gmail.com" method="post" enctype="text/plain">
             <label>Name</label>
             <input type="text" name="" value=""><br />
@@ -38,7 +40,10 @@
             <input type="number"><br />
             <label> Email </label>
             <input type="email"><br />
-            <input type="submit"><br />
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Select File</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
         </form>    
     </body>
 </html>

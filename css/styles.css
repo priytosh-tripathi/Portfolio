@@ -1,0 +1,14 @@
+body{
+    background-color: #ECF2FF;
+    color: #453C67;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #3E54AC;
+    border-width: 1px;
+    width: 100%
+}
+
