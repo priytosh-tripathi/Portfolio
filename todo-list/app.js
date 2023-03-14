@@ -10,8 +10,17 @@ app.set("view engine","ejs");
 app.get("/", function(req,res){
 
     var today = new Date();
-    var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    res.render("list", {kindOfDay: day[today.getDay()]});
+
+    var options = {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+    };
+
+    var day0 = today.toLocaleDateString("en-US", options);
+
+    // var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    res.render("list", {kindOfDay: day0});
 });
 
 app.listen(3000,function(){
